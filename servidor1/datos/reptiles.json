@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Cocodrilo",
+    "descripcion": "Depredador del agua",
+    "imagen": "https://imgs.search.brave.com/978HEG-k3pBgFZJAe9GqJ6ZUFnNStk6h9kM-qCdMS0M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jb25j/ZXB0by5kZS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMS8wNy9j/b2NvZHJpbG8tZTE2/MjY2NDA2OTgxMTIu/anBn",
+    "ubicacion": "Área de reptiles"
+  },
+  {
+    "nombre": "Serpiente",
+    "descripcion": "Elegante reptil",
+    "imagen": "https://imgs.search.brave.com/h19-RHpyuRuU5kRj6-ZUEzaoADpEx53Xm7y1ZaJqYeM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmJs/b2dzLmVzL2IwNjcy/Mi9zZXJwaWVudGUt/ZGllbnRlcy0vMTAy/NF8yMDAwLmpwZw",
+    "ubicacion": "Área de reptiles"
+  },
+  {
+    "nombre": "Tortuga",
+    "descripcion": "Anciano de caparazón",
+    "imagen": "https://imgs.search.brave.com/R37RHv_ovMsbzpFNCqpLdkuLhc48s0DwFw4X8MccCaw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGlhaW50ZXJuYWNp/b25hbGRlLmNvbS9p/bWFnZW5lcy9kaWFz/LzA1LTIzX2RpYS1t/dW5kaWFsLXRvcnR1/Z2EuanBn",
+    "ubicacion": "Área de reptiles"
+  }
+]

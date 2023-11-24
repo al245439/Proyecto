@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Águila",
+    "descripcion": "Reina de los cielos",
+    "imagen": "https://imgs.search.brave.com/w-Ipi9lez_FxkkxJA_vykNI9jMlN3aWu6CKvhntpZqQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/Z29iLm14L2Ntcy91/cGxvYWRzL2ltYWdl/L2ZpbGUvMjk0NTU5/L2FndWlsYV9yZWFs/LmpwZw",
+    "ubicacion": "Área de aves"
+  },
+  {
+    "nombre": "Pingüino",
+    "descripcion": "Aventurero de la Antártida",
+    "imagen": "https://imgs.search.brave.com/3Sq-uSLJp_BcOnXaz8TPWrzM5SjZToqYw2dcBLka55M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YW5pcGVkaWEubmV0/L2ltYWdlbmVzL2Rv/bmRlLXZpdmVuLWxv/cy1waW5ndWlub3Mu/anBn",
+    "ubicacion": "Área de aves"
+  },
+  {
+    "nombre": "Colibrí",
+    "descripcion": "Maestro del vuelo",
+    "imagen": "https://imgs.search.brave.com/s4YdkBaRiZFTyygOkipJLzQGLXc0wCrhBxO_cw7nTxk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kYW0u/bmdlbmVzcGFub2wu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIwLzEyL2NvbGli/ciVDMyVBRGVzLWRh/dG9zLmpwZw",
+    "ubicacion": "Área de aves"
+  }
+]

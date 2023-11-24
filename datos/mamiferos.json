@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "León",
+    "descripcion": "El rey de la selva",
+    "imagen": "https://imgs.search.brave.com/Ht-QAHuFtxMZrO3FiXMUJVr2quT0cuxwwxEfaOOo8P4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9odW1h/bmlkYWRlcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MDMvbGVvbi0xLWUx/NTg3NDAwMjQzMzMx/LmpwZw",
+    "ubicacion": "Área de mamíferos",
+    "country": "Spain"
+  },
+  {
+    "nombre": "Elefante",
+    "descripcion": "Gigante de la sabana",
+    "imagen": "https://imgs.search.brave.com/rGVj2MiVaJUvXHRQ9PbNmgyyA3kzJpRX5OWqj3sKCSM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/bmF0aW9uYWxnZW9n/cmFwaGljLmNvbS5l/cy9tZWRpby8yMDIw/LzAzLzA0L2VsZWZh/bnRlLWVuLWVsLXBh/cnF1ZS1uYWNpb25h/bC1kZS1hbWJvc2Vs/aS1jb24tZWwta2ls/aW1hbmphcm8tYWwt/Zm9uZG9fNDMwOGZh/NThfODAweDgwMC5q/cGc",
+    "ubicacion": "Área de mamíferos"
+    "country": "Kenya"
+  },
+  {
+    "nombre": "Oso",
+    "descripcion": "Poderoso oso",
+    "imagen": "https://imgs.search.brave.com/msTCF-zivzxyBVRJciXBSru0WpSECkB-6y2Xz3QmBbs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2M5L09zby5qcGc",
+    "ubicacion": "Área de mamíferos"
+  }
+]
