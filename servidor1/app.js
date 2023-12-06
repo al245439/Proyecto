@@ -1,22 +1,19 @@
 const express = require('express');
 const axios = require('axios');
 const fs = require('fs');
-const crypto = require('crypto');  // Asegúrate de incluir esta línea
+const crypto = require('crypto');
+const admin = require('firebase-admin');
+const serviceAccount = require('./firebase-config/serviceAccount.json');
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://whozooredes3-default-rtdb.firebaseio.com/',
+});
+
+const db = admin.database();
+
 const app = express();
 const port = 3000;
-
-const apiKey = 'AIzaSyCEieAEmAiIb314nRSDUUJpbsfQ3MeqjyA';
-
-app.get('/ubicacion', async (req, res) => {
-  try {
-    const response = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=${apiKey}`);
-    const location = response.data.results[0].geometry.location;
-    res.json({ latitud: location.lat, longitud: location.lng });
-  } catch (error) {
-    console.error('Error al obtener la ubicación desde Google Maps:', error);
-    res.status(500).json({ error: 'Error al obtener la ubicación' });
-  }
-});
 
 // Función para cifrar datos
 function cifrarDatos(datos, clave) {
@@ -40,7 +37,7 @@ app.get('/datos-cifrados/:categoria', async (req, res) => {
     const datos = require(`./datos/${categoria}.json`);
     const claveSecreta = process.env.CLAVE_SECRETA || 'alfredo2002';
     const datosCifrados = cifrarDatos(datos, claveSecreta);
-    fs.writeFileSync(`./datos-cifrados/${categoria}-cifrado.json`, datosCifrados);
+    db.ref(`datos-cifrados/${categoria}-cifrado`).set(datosCifrados);
     res.send('Datos cifrados y almacenados');
   } catch (error) {
     console.error(error);

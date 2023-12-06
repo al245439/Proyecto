@@ -1,19 +1,18 @@
 const express = require('express');
 const fs = require('fs');
 const crypto = require('crypto');
+const admin = require('firebase-admin');
+const serviceAccount = require('./firebase-config/serviceAccount.json');
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://whozooredes3-default-rtdb.firebaseio.com/',
+});
+
+const db = admin.database();
+
 const app = express();
 const port = 3001;
-
-app.get('/posts', async (req, res) => {
-  try {
-    const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-    const posts = response.data;
-    res.json(posts);
-  } catch (error) {
-    console.error('Error al obtener posts desde JSONPlaceholder:', error);
-    res.status(500).json({ error: 'Error al obtener posts' });
-  }
-});
 
 // Función para descifrar datos
 function descifrarDatos(datosCifrados, clave) {
@@ -35,7 +34,7 @@ app.get('/datos/:categoria', (req, res) => {
 
   try {
     const claveSecreta = process.env.CLAVE_SECRETA || 'alfredo2002';
-    const datosCifrados = fs.readFileSync(`./datos-cifrados/${categoria}-cifrado.json`, 'utf8');
+    const datosCifrados = db.ref(`datos-cifrados/${categoria}-cifrado`);
     const datosDescifrados = descifrarDatos(datosCifrados, claveSecreta);
     res.json(datosDescifrados);
   } catch (error) {
